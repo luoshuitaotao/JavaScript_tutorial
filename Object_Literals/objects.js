@@ -1,33 +1,11 @@
-var userOne= {
-    email:'ryu@ninjas.com',
-    name:'Ryu',
-    login(){
-        console.log(this.email,'has logged in')
-    },
-    logout(){
-        console.log(this.email, 'has logged out')
+class User {
+    constructor(email, name){
+        this.email = email;
+        this.name= name;
     }
-};
+}
+var userOne = new User('ryu@ninjas.com','Ryu');
+var userTwo = new User('yoshi@mario.com', 'Yoshi');
 
-var userTwo= {
-    email:'yoshi@ninjas.com',
-    name:'Yoshi',
-    login(){
-        console.log(this.email,'has logged in')
-    },
-    logout(){
-        console.log(this.email, 'has logged out')
-    }
-};
-var userThree= {
-    email:'leini@ninjas.com',
-    name:'leini',
-    login(){
-        console.log(this.email,'has logged in')
-    },
-    logout(){
-        console.log(this.email, 'has logged out')
-    }
-};
-userOne.name = 'Yoshi';
-            
+console.log(userOne);
+console.log(userTwo);
