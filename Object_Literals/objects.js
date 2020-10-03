@@ -3,9 +3,15 @@ class User {
         this.email = email;
         this.name= name;
     }
+    login(){
+        console.log(this.email, 'just logged in');
+    } 
+    logout(){
+        console.log(this.name, 'just logged out')
+    }
 }
 var userOne = new User('ryu@ninjas.com','Ryu');
 var userTwo = new User('yoshi@mario.com', 'Yoshi');
 
-console.log(userOne);
-console.log(userTwo);
+userOne.login();
+userTwo.logout();
